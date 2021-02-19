@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/justmeandopensource/playjenkins.git'
+        git 'https://github.com/anandsukan007/kubernetes-helloworld.git'
       }
     }
 
@@ -35,9 +35,7 @@ pipeline {
 
     stage('Deploy App') {
       steps {
-        script {
-          kubernetesDeploy(configs: "myweb.yaml", kubeconfigId: "mykubeconfig")
-        }
+        sh " kubectl apply -f myweb.yaml "
       }
     }
 
