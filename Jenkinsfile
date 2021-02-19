@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/anandsukan007/kubernetes-helloworld.git'
+        git credentialsId: 'github_cred', url: 'https://github.com/anandsukan007/kubernetes-helloworld.git'
       }
     }
 
