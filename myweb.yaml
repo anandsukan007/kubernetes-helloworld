@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: anandsukan007/k8s-helloworld:latest
+      - image: anandsukan007/k8s-helloworld:1
         imagePullPolicy: Always
         name: myweb
 
