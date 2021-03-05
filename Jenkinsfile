@@ -18,7 +18,7 @@ pipeline {
     stage('Build Docker Image'){
             //agent { label 'slave_kubemaster' }
         steps{
-        sh 'docker build -t anandsukan007/k8s-helloworld:1.0.0 .'
+        sh 'docker build -t anandsukan007/k8s-helloworld:2.0.0 .'
     }
     }
     
