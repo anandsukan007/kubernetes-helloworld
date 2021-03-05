@@ -27,7 +27,7 @@ pipeline {
         withCredentials([string(credentialsId: 'DOCKER_HUB_PASSWORD', variable: 'DOCKER_HUB_PASSWORD')]) {
               sh "docker login -u anandsukan007 -p ${DOCKER_HUB_PASSWORD}"
         }
-        sh "docker push anandsukan007/k8s-helloworld:1.0.0 "
+        sh "docker push anandsukan007/k8s-helloworld:2.0.0 "
      }
      }
         stage('Deploy to K8s'){
