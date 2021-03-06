@@ -36,7 +36,7 @@ pipeline {
         sh " hostname "
         sh " ls -ltr "
         sh " cp -R myweb/* . "      
-        sh " helm install myweb . "  
+        sh " /usr/local/bin/helm upgrade --install myweb . "  
     }
     }
      }
