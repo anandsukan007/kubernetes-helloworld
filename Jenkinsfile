@@ -32,6 +32,7 @@ pipeline {
      }
         stage('Deploy to K8s'){
             steps{
+        sh " pwd "      
         sh " helm install myweb/Chart.yaml . "  
     }
     }
