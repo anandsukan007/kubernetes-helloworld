@@ -3,7 +3,7 @@ pipeline {
   environment {
     registry = "anandsukan007/k8s-helloworld"
    // dockerImage = ""
-    Imagetagname = "5.0.0"
+    Imagetagname = "6.0.0"
   }
 
   agent { label 'kubemaster' }
@@ -36,7 +36,7 @@ pipeline {
         sh " pwd "  
         sh " hostname "
         sh " ls -ltr "
-        sh " cp -R myweb/* . "      
+       // sh " cp -R myweb/* . "      
         sh " /usr/local/bin/helm upgrade --install myweb . "  
     }
     }
