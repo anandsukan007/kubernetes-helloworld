@@ -1,1 +1,6 @@
 replicaCount: 2
+
+image:
+  repository: anandsukan007/k8s-helloworld
+  tag: latest
+  pullPolicy: IfNotPresent
