@@ -16,7 +16,8 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: anandsukan007/k8s-helloworld:4.0.0
+      #- image: anandsukan007/k8s-helloworld:4.0.0
+       - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: Always
         name: myweb
 
