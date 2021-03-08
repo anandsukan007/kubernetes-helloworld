@@ -3,7 +3,7 @@ pipeline {
   environment {
     registry = "anandsukan007/k8s-helloworld"
    // dockerImage = ""
-    Imagetagname = "6.0.0"
+    Imagetagname = "7.0.0"
   }
 
   agent { label 'kubemaster' }
